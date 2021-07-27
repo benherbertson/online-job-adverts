@@ -1,0 +1,241 @@
+date,jobs,industry
+2021-06-28,106.5,Hospitality & Catering
+2021-06-28,127.9,Graduate
+2021-06-28,94.1,Trade & Construction
+2021-06-28,89.0,Healthcare & Nursing
+2021-06-28,91.7,Retail
+2021-06-28,100.9,Travel
+2021-06-28,82.2,Logistics & Warehouse
+2021-06-28,88.8,Teaching
+2021-06-29,106.5,Hospitality & Catering
+2021-06-29,134.2,Graduate
+2021-06-29,84.1,Trade & Construction
+2021-06-29,91.1,Healthcare & Nursing
+2021-06-29,87.9,Retail
+2021-06-29,92.8,Travel
+2021-06-29,81.4,Logistics & Warehouse
+2021-06-29,92.9,Teaching
+2021-06-30,106.9,Hospitality & Catering
+2021-06-30,117.2,Graduate
+2021-06-30,85.2,Trade & Construction
+2021-06-30,91.6,Healthcare & Nursing
+2021-06-30,86.3,Retail
+2021-06-30,95.5,Travel
+2021-06-30,81.0,Logistics & Warehouse
+2021-06-30,94.9,Teaching
+2021-07-01,106.7,Hospitality & Catering
+2021-07-01,138.8,Graduate
+2021-07-01,86.8,Trade & Construction
+2021-07-01,92.4,Healthcare & Nursing
+2021-07-01,85.6,Retail
+2021-07-01,91.5,Travel
+2021-07-01,82.1,Logistics & Warehouse
+2021-07-01,95.4,Teaching
+2021-07-02,105.3,Hospitality & Catering
+2021-07-02,103.3,Graduate
+2021-07-02,86.5,Trade & Construction
+2021-07-02,93.5,Healthcare & Nursing
+2021-07-02,87.4,Retail
+2021-07-02,99.6,Travel
+2021-07-02,82.7,Logistics & Warehouse
+2021-07-02,97.5,Teaching
+2021-07-03,106.2,Hospitality & Catering
+2021-07-03,129.4,Graduate
+2021-07-03,87.8,Trade & Construction
+2021-07-03,104.6,Healthcare & Nursing
+2021-07-03,88.3,Retail
+2021-07-03,100.9,Travel
+2021-07-03,81.7,Logistics & Warehouse
+2021-07-03,99.0,Teaching
+2021-07-04,104.5,Hospitality & Catering
+2021-07-04,87.3,Graduate
+2021-07-04,84.3,Trade & Construction
+2021-07-04,103.0,Healthcare & Nursing
+2021-07-04,84.8,Retail
+2021-07-04,96.9,Travel
+2021-07-04,82.4,Logistics & Warehouse
+2021-07-04,97.5,Teaching
+2021-07-05,102.0,Hospitality & Catering
+2021-07-05,129.7,Graduate
+2021-07-05,83.6,Trade & Construction
+2021-07-05,101.0,Healthcare & Nursing
+2021-07-05,85.0,Retail
+2021-07-05,104.9,Travel
+2021-07-05,82.3,Logistics & Warehouse
+2021-07-05,96.8,Teaching
+2021-07-06,101.7,Hospitality & Catering
+2021-07-06,77.3,Graduate
+2021-07-06,101.3,Trade & Construction
+2021-07-06,100.4,Healthcare & Nursing
+2021-07-06,97.5,Retail
+2021-07-06,95.5,Travel
+2021-07-06,82.7,Logistics & Warehouse
+2021-07-06,94.2,Teaching
+2021-07-07,101.5,Hospitality & Catering
+2021-07-07,77.0,Graduate
+2021-07-07,103.2,Trade & Construction
+2021-07-07,102.9,Healthcare & Nursing
+2021-07-07,99.1,Retail
+2021-07-07,91.5,Travel
+2021-07-07,83.3,Logistics & Warehouse
+2021-07-07,97.0,Teaching
+2021-07-08,101.1,Hospitality & Catering
+2021-07-08,77.6,Graduate
+2021-07-08,103.1,Trade & Construction
+2021-07-08,102.9,Healthcare & Nursing
+2021-07-08,97.5,Retail
+2021-07-08,91.5,Travel
+2021-07-08,87.3,Logistics & Warehouse
+2021-07-08,98.1,Teaching
+2021-07-09,100.9,Hospitality & Catering
+2021-07-09,94.2,Graduate
+2021-07-09,103.0,Trade & Construction
+2021-07-09,104.6,Healthcare & Nursing
+2021-07-09,92.6,Retail
+2021-07-09,100.9,Travel
+2021-07-09,88.0,Logistics & Warehouse
+2021-07-09,96.5,Teaching
+2021-07-10,100.7,Hospitality & Catering
+2021-07-10,105.1,Graduate
+2021-07-10,104.3,Trade & Construction
+2021-07-10,103.1,Healthcare & Nursing
+2021-07-10,98.6,Retail
+2021-07-10,100.9,Travel
+2021-07-10,111.0,Logistics & Warehouse
+2021-07-10,100.6,Teaching
+2021-07-11,100.1,Hospitality & Catering
+2021-07-11,80.6,Graduate
+2021-07-11,103.5,Trade & Construction
+2021-07-11,103.3,Healthcare & Nursing
+2021-07-11,94.0,Retail
+2021-07-11,99.6,Travel
+2021-07-11,111.3,Logistics & Warehouse
+2021-07-11,99.9,Teaching
+2021-07-12,98.7,Hospitality & Catering
+2021-07-12,67.9,Graduate
+2021-07-12,105.4,Trade & Construction
+2021-07-12,97.6,Healthcare & Nursing
+2021-07-12,92.7,Retail
+2021-07-12,102.2,Travel
+2021-07-12,110.5,Logistics & Warehouse
+2021-07-12,88.4,Teaching
+2021-07-13,99.3,Hospitality & Catering
+2021-07-13,94.5,Graduate
+2021-07-13,103.3,Trade & Construction
+2021-07-13,100.0,Healthcare & Nursing
+2021-07-13,94.0,Retail
+2021-07-13,95.5,Travel
+2021-07-13,110.6,Logistics & Warehouse
+2021-07-13,97.9,Teaching
+2021-07-14,100.2,Hospitality & Catering
+2021-07-14,127.9,Graduate
+2021-07-14,104.1,Trade & Construction
+2021-07-14,100.2,Healthcare & Nursing
+2021-07-14,98.5,Retail
+2021-07-14,106.3,Travel
+2021-07-14,111.7,Logistics & Warehouse
+2021-07-14,100.0,Teaching
+2021-07-15,99.4,Hospitality & Catering
+2021-07-15,76.3,Graduate
+2021-07-15,100.2,Trade & Construction
+2021-07-15,99.9,Healthcare & Nursing
+2021-07-15,94.5,Retail
+2021-07-15,95.5,Travel
+2021-07-15,111.5,Logistics & Warehouse
+2021-07-15,100.5,Teaching
+2021-07-16,98.8,Hospitality & Catering
+2021-07-16,73.3,Graduate
+2021-07-16,101.7,Trade & Construction
+2021-07-16,98.9,Healthcare & Nursing
+2021-07-16,100.9,Retail
+2021-07-16,98.2,Travel
+2021-07-16,112.2,Logistics & Warehouse
+2021-07-16,94.6,Teaching
+2021-07-17,98.9,Hospitality & Catering
+2021-07-17,107.2,Graduate
+2021-07-17,102.3,Trade & Construction
+2021-07-17,99.5,Healthcare & Nursing
+2021-07-17,102.8,Retail
+2021-07-17,102.2,Travel
+2021-07-17,114.1,Logistics & Warehouse
+2021-07-17,104.8,Teaching
+2021-07-18,98.5,Hospitality & Catering
+2021-07-18,92.4,Graduate
+2021-07-18,102.9,Trade & Construction
+2021-07-18,100.7,Healthcare & Nursing
+2021-07-18,103.3,Retail
+2021-07-18,94.2,Travel
+2021-07-18,112.8,Logistics & Warehouse
+2021-07-18,104.2,Teaching
+2021-07-19,97.1,Hospitality & Catering
+2021-07-19,130.3,Graduate
+2021-07-19,103.7,Trade & Construction
+2021-07-19,98.4,Healthcare & Nursing
+2021-07-19,108.6,Retail
+2021-07-19,98.2,Travel
+2021-07-19,112.0,Logistics & Warehouse
+2021-07-19,101.4,Teaching
+2021-07-20,97.3,Hospitality & Catering
+2021-07-20,127.9,Graduate
+2021-07-20,101.4,Trade & Construction
+2021-07-20,96.5,Healthcare & Nursing
+2021-07-20,108.7,Retail
+2021-07-20,92.8,Travel
+2021-07-20,111.6,Logistics & Warehouse
+2021-07-20,101.0,Teaching
+2021-07-21,97.7,Hospitality & Catering
+2021-07-21,90.6,Graduate
+2021-07-21,102.5,Trade & Construction
+2021-07-21,96.3,Healthcare & Nursing
+2021-07-21,108.0,Retail
+2021-07-21,95.5,Travel
+2021-07-21,111.2,Logistics & Warehouse
+2021-07-21,94.5,Teaching
+2021-07-22,97.3,Hospitality & Catering
+2021-07-22,109.7,Graduate
+2021-07-22,102.9,Trade & Construction
+2021-07-22,99.6,Healthcare & Nursing
+2021-07-22,109.2,Retail
+2021-07-22,104.9,Travel
+2021-07-22,110.7,Logistics & Warehouse
+2021-07-22,104.5,Teaching
+2021-07-23,98.2,Hospitality & Catering
+2021-07-23,121.8,Graduate
+2021-07-23,104.2,Trade & Construction
+2021-07-23,100.3,Healthcare & Nursing
+2021-07-23,109.3,Retail
+2021-07-23,121.1,Travel
+2021-07-23,113.7,Logistics & Warehouse
+2021-07-23,104.8,Teaching
+2021-07-24,97.4,Hospitality & Catering
+2021-07-24,93.3,Graduate
+2021-07-24,103.4,Trade & Construction
+2021-07-24,102.5,Healthcare & Nursing
+2021-07-24,116.7,Retail
+2021-07-24,114.3,Travel
+2021-07-24,112.1,Logistics & Warehouse
+2021-07-24,107.1,Teaching
+2021-07-25,97.0,Hospitality & Catering
+2021-07-25,90.6,Graduate
+2021-07-25,106.4,Trade & Construction
+2021-07-25,100.4,Healthcare & Nursing
+2021-07-25,114.0,Retail
+2021-07-25,83.4,Travel
+2021-07-25,112.8,Logistics & Warehouse
+2021-07-25,106.1,Teaching
+2021-07-26,96.5,Hospitality & Catering
+2021-07-26,128.2,Graduate
+2021-07-26,103.8,Trade & Construction
+2021-07-26,98.2,Healthcare & Nursing
+2021-07-26,112.3,Retail
+2021-07-26,107.6,Travel
+2021-07-26,45.7,Logistics & Warehouse
+2021-07-26,101.7,Teaching
+2021-07-27,97.0,Hospitality & Catering
+2021-07-27,68.2,Graduate
+2021-07-27,104.4,Trade & Construction
+2021-07-27,99.5,Healthcare & Nursing
+2021-07-27,116.0,Retail
+2021-07-27,114.3,Travel
+2021-07-27,111.9,Logistics & Warehouse
+2021-07-27,115.9,Teaching

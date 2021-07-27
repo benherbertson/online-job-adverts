@@ -1,0 +1,249 @@
+date,jobs,state
+2021-06-27,95.1,New South Wales
+2021-06-27,92.1,Victoria
+2021-06-27,93.6,Queensland
+2021-06-27,93.4,Western Australia
+2021-06-27,93.4,South Australia
+2021-06-27,95.1,Australian Capital Territory
+2021-06-27,94.8,Tasmania
+2021-06-27,104.3,Northern Territory
+2021-06-28,94.2,New South Wales
+2021-06-28,91.8,Victoria
+2021-06-28,93.1,Queensland
+2021-06-28,94.0,Western Australia
+2021-06-28,93.1,South Australia
+2021-06-28,95.2,Australian Capital Territory
+2021-06-28,96.9,Tasmania
+2021-06-28,104.3,Northern Territory
+2021-06-29,80.3,New South Wales
+2021-06-29,76.9,Victoria
+2021-06-29,78.1,Queensland
+2021-06-29,84.4,Western Australia
+2021-06-29,74.8,South Australia
+2021-06-29,85.4,Australian Capital Territory
+2021-06-29,92.7,Northern Territory
+2021-06-29,78.4,Tasmania
+2021-06-30,79.9,New South Wales
+2021-06-30,77.0,Victoria
+2021-06-30,77.2,Queensland
+2021-06-30,84.9,Western Australia
+2021-06-30,75.2,South Australia
+2021-06-30,84.6,Australian Capital Territory
+2021-06-30,91.3,Northern Territory
+2021-06-30,77.5,Tasmania
+2021-07-01,81.4,New South Wales
+2021-07-01,77.7,Victoria
+2021-07-01,78.4,Queensland
+2021-07-01,85.8,Western Australia
+2021-07-01,76.8,South Australia
+2021-07-01,85.9,Australian Capital Territory
+2021-07-01,80.9,Tasmania
+2021-07-01,92.4,Northern Territory
+2021-07-02,82.3,New South Wales
+2021-07-02,79.3,Victoria
+2021-07-02,79.5,Queensland
+2021-07-02,87.0,Western Australia
+2021-07-02,78.7,South Australia
+2021-07-02,88.0,Australian Capital Territory
+2021-07-02,83.1,Tasmania
+2021-07-02,92.0,Northern Territory
+2021-07-03,84.7,New South Wales
+2021-07-03,81.4,Victoria
+2021-07-03,82.6,Queensland
+2021-07-03,88.1,Western Australia
+2021-07-03,80.9,South Australia
+2021-07-03,89.1,Australian Capital Territory
+2021-07-03,86.4,Tasmania
+2021-07-03,93.0,Northern Territory
+2021-07-04,83.5,New South Wales
+2021-07-04,80.2,Victoria
+2021-07-04,80.4,Queensland
+2021-07-04,85.8,Western Australia
+2021-07-04,79.3,South Australia
+2021-07-04,89.1,Australian Capital Territory
+2021-07-04,84.0,Tasmania
+2021-07-04,92.0,Northern Territory
+2021-07-05,82.1,New South Wales
+2021-07-05,79.6,Victoria
+2021-07-05,80.8,Queensland
+2021-07-05,85.4,Western Australia
+2021-07-05,78.8,South Australia
+2021-07-05,88.2,Australian Capital Territory
+2021-07-05,86.1,Tasmania
+2021-07-05,91.0,Northern Territory
+2021-07-06,101.0,New South Wales
+2021-07-06,99.9,Victoria
+2021-07-06,102.5,Queensland
+2021-07-06,99.6,Western Australia
+2021-07-06,101.3,South Australia
+2021-07-06,99.8,Australian Capital Territory
+2021-07-06,101.0,Tasmania
+2021-07-06,104.3,Northern Territory
+2021-07-07,101.9,New South Wales
+2021-07-07,101.7,Victoria
+2021-07-07,103.0,Queensland
+2021-07-07,101.2,Western Australia
+2021-07-07,102.2,South Australia
+2021-07-07,99.9,Australian Capital Territory
+2021-07-07,99.7,Tasmania
+2021-07-07,105.1,Northern Territory
+2021-07-08,103.5,New South Wales
+2021-07-08,101.7,Victoria
+2021-07-08,103.1,Queensland
+2021-07-08,100.2,Western Australia
+2021-07-08,102.6,South Australia
+2021-07-08,102.5,Australian Capital Territory
+2021-07-08,99.5,Tasmania
+2021-07-08,103.1,Northern Territory
+2021-07-09,101.7,New South Wales
+2021-07-09,100.1,Victoria
+2021-07-09,100.9,Queensland
+2021-07-09,101.8,Western Australia
+2021-07-09,102.1,South Australia
+2021-07-09,102.5,Australian Capital Territory
+2021-07-09,97.5,Tasmania
+2021-07-09,101.1,Northern Territory
+2021-07-10,105.0,New South Wales
+2021-07-10,102.9,Victoria
+2021-07-10,105.5,Queensland
+2021-07-10,101.6,Western Australia
+2021-07-10,104.1,South Australia
+2021-07-10,104.1,Australian Capital Territory
+2021-07-10,99.2,Tasmania
+2021-07-10,103.6,Northern Territory
+2021-07-11,103.6,New South Wales
+2021-07-11,100.6,Victoria
+2021-07-11,103.7,Queensland
+2021-07-11,101.0,Western Australia
+2021-07-11,103.3,South Australia
+2021-07-11,103.4,Australian Capital Territory
+2021-07-11,98.4,Tasmania
+2021-07-11,101.9,Northern Territory
+2021-07-12,101.6,New South Wales
+2021-07-12,99.4,Victoria
+2021-07-12,102.9,Queensland
+2021-07-12,100.4,Western Australia
+2021-07-12,102.0,South Australia
+2021-07-12,100.9,Australian Capital Territory
+2021-07-12,101.2,Tasmania
+2021-07-12,101.1,Northern Territory
+2021-07-13,102.9,New South Wales
+2021-07-13,100.2,Victoria
+2021-07-13,103.9,Queensland
+2021-07-13,100.2,Western Australia
+2021-07-13,102.5,South Australia
+2021-07-13,102.0,Australian Capital Territory
+2021-07-13,98.2,Tasmania
+2021-07-13,99.9,Northern Territory
+2021-07-14,102.2,New South Wales
+2021-07-14,104.1,Victoria
+2021-07-14,104.2,Queensland
+2021-07-14,97.3,Western Australia
+2021-07-14,103.8,South Australia
+2021-07-14,102.2,Australian Capital Territory
+2021-07-14,99.9,Tasmania
+2021-07-14,100.8,Northern Territory
+2021-07-15,101.3,New South Wales
+2021-07-15,102.6,Victoria
+2021-07-15,101.6,Queensland
+2021-07-15,101.2,Western Australia
+2021-07-15,101.7,South Australia
+2021-07-15,98.6,Australian Capital Territory
+2021-07-15,97.7,Tasmania
+2021-07-15,100.0,Northern Territory
+2021-07-16,102.9,New South Wales
+2021-07-16,104.2,Victoria
+2021-07-16,103.4,Queensland
+2021-07-16,102.6,Western Australia
+2021-07-16,104.4,South Australia
+2021-07-16,99.1,Australian Capital Territory
+2021-07-16,100.4,Tasmania
+2021-07-16,103.1,Northern Territory
+2021-07-17,104.6,New South Wales
+2021-07-17,106.0,Victoria
+2021-07-17,104.7,Queensland
+2021-07-17,104.1,Western Australia
+2021-07-17,105.3,South Australia
+2021-07-17,100.7,Australian Capital Territory
+2021-07-17,102.1,Tasmania
+2021-07-17,104.4,Northern Territory
+2021-07-18,103.2,New South Wales
+2021-07-18,106.1,Victoria
+2021-07-18,104.4,Queensland
+2021-07-18,105.1,Western Australia
+2021-07-18,105.8,South Australia
+2021-07-18,100.8,Australian Capital Territory
+2021-07-18,103.6,Tasmania
+2021-07-18,101.7,Northern Territory
+2021-07-19,103.7,New South Wales
+2021-07-19,106.1,Victoria
+2021-07-19,105.0,Queensland
+2021-07-19,105.3,Western Australia
+2021-07-19,106.6,South Australia
+2021-07-19,101.0,Australian Capital Territory
+2021-07-19,108.7,Tasmania
+2021-07-19,101.3,Northern Territory
+2021-07-20,103.6,New South Wales
+2021-07-20,106.0,Victoria
+2021-07-20,105.1,Queensland
+2021-07-20,103.8,Western Australia
+2021-07-20,105.0,South Australia
+2021-07-20,101.2,Australian Capital Territory
+2021-07-20,102.3,Tasmania
+2021-07-20,101.1,Northern Territory
+2021-07-21,103.4,New South Wales
+2021-07-21,106.0,Victoria
+2021-07-21,104.6,Queensland
+2021-07-21,103.9,Western Australia
+2021-07-21,105.8,South Australia
+2021-07-21,101.2,Australian Capital Territory
+2021-07-21,104.3,Tasmania
+2021-07-21,99.1,Northern Territory
+2021-07-22,106.1,New South Wales
+2021-07-22,108.1,Victoria
+2021-07-22,106.8,Queensland
+2021-07-22,105.8,Western Australia
+2021-07-22,107.7,South Australia
+2021-07-22,103.7,Australian Capital Territory
+2021-07-22,106.9,Tasmania
+2021-07-22,100.7,Northern Territory
+2021-07-23,106.8,New South Wales
+2021-07-23,109.0,Victoria
+2021-07-23,106.8,Queensland
+2021-07-23,107.3,Western Australia
+2021-07-23,107.3,South Australia
+2021-07-23,104.5,Australian Capital Territory
+2021-07-23,109.2,Tasmania
+2021-07-23,101.8,Northern Territory
+2021-07-24,107.6,New South Wales
+2021-07-24,110.6,Victoria
+2021-07-24,108.2,Queensland
+2021-07-24,107.0,Western Australia
+2021-07-24,108.3,South Australia
+2021-07-24,107.8,Australian Capital Territory
+2021-07-24,114.0,Tasmania
+2021-07-24,103.0,Northern Territory
+2021-07-25,107.6,New South Wales
+2021-07-25,109.9,Victoria
+2021-07-25,107.3,Queensland
+2021-07-25,108.9,Western Australia
+2021-07-25,107.7,South Australia
+2021-07-25,108.8,Australian Capital Territory
+2021-07-25,113.4,Tasmania
+2021-07-25,100.6,Northern Territory
+2021-07-26,103.5,New South Wales
+2021-07-26,106.7,Victoria
+2021-07-26,103.8,Queensland
+2021-07-26,105.5,Western Australia
+2021-07-26,106.1,South Australia
+2021-07-26,106.9,Australian Capital Territory
+2021-07-26,108.6,Tasmania
+2021-07-26,99.7,Northern Territory
+2021-07-27,108.2,New South Wales
+2021-07-27,110.1,Victoria
+2021-07-27,107.0,Queensland
+2021-07-27,104.2,Western Australia
+2021-07-27,109.9,South Australia
+2021-07-27,107.8,Australian Capital Territory
+2021-07-27,113.8,Tasmania
+2021-07-27,102.2,Northern Territory

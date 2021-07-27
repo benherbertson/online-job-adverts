@@ -1,0 +1,274 @@
+---
+title: "Online Job Advert Estimates"
+author: Ben Herbertson
+output: html_document
+---
+
+Real-time experimental job advert indices covering the Australian job market. Download data. Source code on [GitHub](https://github.com/benherbertson/online-job-adverts).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, echo = FALSE)
+library(tidyverse)
+library(glue)
+library(lubridate)
+library(highcharter)
+options(highcharter.theme = hc_theme_hcrt(tooltip = list(valueDecimals = 1)))
+library(htmltools)
+```
+
+## Total jobs
+
+```{r total}
+# TODO Add zero axis line
+
+df_total = read_csv("../data/index/total.csv")
+
+# For tooltip
+df_total = df_total %>%
+  mutate(date_formatted = format(ymd(date), "%a, %b %e, %Y"))
+
+df_total = df_total %>% 
+  mutate(
+    hc_ttip = 
+      glue(
+        "
+        {date_formatted} <br>
+        Index: {jobs}
+        "
+    )
+  )
+
+hc <- hchart(df_total, "line", hcaes(x = date, y = jobs), color = "steelblue")
+
+hc %>% 
+  hc_title(
+    text = "Total online jobs"
+  ) %>% 
+  hc_subtitle(
+    text = "Volume of total online jobs, index: 100 = July 2021 average, 
+    non-seasonally adjusted"
+  ) %>%
+  hc_xAxis(
+    title = list(enabled = FALSE),
+    labels = list(style = list(fontSize = 13)),
+    dateTimeLabelFormats = list(day = "%e %b"),
+    gridLineWidth = 0,
+    lineColor = "#DCDCDC",  # the color of the line marking the axis itself
+    tickColor = "#DCDCDC"
+  ) %>% 
+  hc_yAxis(
+    title = list(text = "Index", margin = 20, style = list(fontSize= 14)),
+    labels = list(style = list(fontSize = 13)),
+    gridLineColor = "#DCDCDC",
+    tickLength = 0,
+    tickInterval = 5,
+    min = 70,
+    max = 125
+  ) %>% 
+  hc_tooltip(
+    formatter = JS(
+      "
+      function(){return(this.point.hc_ttip)}
+      "
+    ),
+    shape = "square",
+    borderWidth = 0
+  )
+```
+## State and territories
+
+```{r by_state}
+df_by_state = read_csv("../data/index/by_state.csv")
+
+hc <- hchart(df_by_state, "line", hcaes(x = date, y = jobs, group = state), layout="vertical")
+
+hc %>% 
+  hc_title(
+    text = "Total online jobs by region"
+  ) %>% 
+  hc_subtitle(
+    text = "Volume of total online jobs by region, index: 100 = July 2021 average, 
+    non-seasonally adjusted"
+  ) %>%
+  hc_xAxis(
+    title = list(enabled = FALSE),
+    labels = list(style = list(fontSize = 13)),
+    dateTimeLabelFormats = list(day = "%e %b"),
+    gridLineWidth = 0,
+    lineColor = "#DCDCDC",  # the color of the line marking the axis itself
+    tickColor = "#DCDCDC"
+  ) %>% 
+  hc_yAxis(
+    title = list(text = "Index", margin = 20, style = list(fontSize= 14)),
+    labels = list(style = list(fontSize = 13)),
+    gridLineColor = "#DCDCDC",
+    tickLength = 0,
+    tickInterval = 5,
+    min = 70,
+    max = 125
+  ) %>% 
+  hc_tooltip(
+    shape = "square",
+    borderWidth = 0
+  )
+```
+## Industry
+
+```{r by_industry}
+df_by_industry = read_csv(
+  "../data/index/by_industry.csv",
+  col_types = cols(industry = col_factor())
+)
+
+# Replace '&' with 'and' for cleaner data viz
+df_by_industry$industry <- str_replace_all(df_by_industry$industry, "&", "and")
+
+# Filter out Graduate index as currently unreliable
+df_by_industry <- filter(df_by_industry, industry != "Graduate")
+
+# Replace anomaly with mean
+# Calculate mean for time series before anomalous value
+logistics <- filter(df_by_industry, 
+                    industry == "Logistics and Warehouse" & date >= "2021-06-28" & date < "2021-07-26")
+mean_jobs <- mean(logistics$jobs)
+mean_jobs_rounded <- round(mean_jobs)
+# anomaly <- filter(df_by_industry, industry == "Logistics and Warehouse" & date == "2021-07-26")
+df_by_industry["jobs"][df_by_industry["jobs"] == 45.7] <- mean_jobs_rounded
+
+# For tooltip
+df_by_industry = df_by_industry %>%
+  mutate(date_formatted = format(ymd(date), "%a, %b %e, %Y"))
+
+df_by_industry = df_by_industry %>% 
+  mutate(
+    hc_ttip = 
+      glue(
+        "
+        {date_formatted} <br>
+        Index: {jobs}
+        "
+    )
+  )
+
+df_by_industry %>%
+  group_by(industry) %>%
+  group_map(~{
+    .x %>%
+      hchart("line", hcaes(x = date, y = jobs), color = "steelblue") %>%
+      hc_title(text = .y$industry,
+               style = list(fontSize = 18)) %>%
+      hc_xAxis(
+        title = list(enabled = FALSE),
+        labels = list(style = list(fontSize = 11)),
+        dateTimeLabelFormats = list(day = "%e %b"),
+        gridLineWidth = 0,
+        lineColor = "#DCDCDC",  # the color of the line marking the axis itself
+        tickColor = "#DCDCDC"
+      ) %>% 
+      hc_yAxis(
+        title = list(enabled = FALSE),
+        labels = list(style = list(fontSize = 11)),
+        gridLineColor = "#DCDCDC",
+        tickLength = 0,
+        tickInterval = 20,
+        min = 70,
+        max = 125
+      ) %>%
+      hc_tooltip(
+        formatter = JS(
+          "
+          function(){return(this.point.hc_ttip)}
+          "
+        ),
+        shape = "square",
+        borderWidth = 0
+      )
+  }) %>%
+  hw_grid(ncol = 3, rowheight = "200px") %>% browsable()
+```
+
+## Work from home opportunities
+
+```{r wfh}
+df_wfh = read_csv("../data/index/work_from_home.csv")
+
+# For tooltip
+df_wfh = df_wfh %>%
+  mutate(date_formatted = format(ymd(date), "%a, %b %e, %Y"))
+
+df_wfh = df_wfh %>% 
+  mutate(
+    hc_ttip = 
+      glue(
+        "
+        {date_formatted} <br>
+        Index: {jobs}
+        "
+    )
+  )
+
+hc <- hchart(df_wfh, "line", hcaes(x = date, y = jobs), color = "steelblue")
+
+hc %>% 
+  hc_title(
+    text = "Work from home jobs"
+  ) %>% 
+  hc_subtitle(
+    text = "Volume of work from home jobs, index: 100 = July 2021 average, 
+    non-seasonally adjusted"
+  ) %>%
+  hc_xAxis(
+    title = list(enabled = FALSE),
+    labels = list(style = list(fontSize = 13)),
+    dateTimeLabelFormats = list(day = "%e %b"),
+    gridLineWidth = 0,
+    lineColor = "#DCDCDC",  # the color of the line marking the axis itself
+    tickColor = "#DCDCDC"
+  ) %>% 
+  hc_yAxis(
+    title = list(text = "Index", margin = 20, style = list(fontSize= 14)),
+    labels = list(style = list(fontSize = 13)),
+    gridLineColor = "#DCDCDC",
+    tickLength = 0,
+    tickInterval = 5,
+    min = 70,
+    max = 125
+  ) %>% 
+  hc_tooltip(
+    formatter = JS(
+      "
+      function(){return(this.point.hc_ttip)}
+      "
+    ),
+    shape = "square",
+    borderWidth = 0
+  )
+```
+
+## Methodology
+
+Methodology information for online job advert indices covering the Australian job market. This was heavily inspired by the experimental statistics developed by the [Office for National Statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/methodologies/usingadzunadatatoderiveanindicatorofweeklyvacanciesexperimentalstatistics) (ONS; UK) in response to [COVID-19](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases).
+
+### 1. Introduction
+
+These experimental job advert indices have been created using job adverts from Adzuna, a job search index.
+
+### 2. The data source
+
+Adzuna is an online job search index that gathers and displays vacancies from many different sources in Australia, including job search engines, recruitment providers, and direct employers' websites.
+
+There will be some job adverts missed such as those advertised through word-of-mouth and internal vacancies. Additionally, one job advert may be used to fill multiple positions.
+
+Data is obtained from the Adzuna website once per day at 8 AM WST. Jobs by state are obtained through the [API provided by Adzuna](https://api.adzuna.com). The remaining data (total adverts, adverts by industry, and work from home adverts) is scraped using the [Beautiful Soup Python library](https://www.crummy.com/software/BeautifulSoup/). These data have been collected since June 2021. The process of data collection has been automated through the use of a [scheduler](https://ole.michelsen.dk/blog/schedule-jobs-with-crontab-on-mac-osx/) that I have running locally on my computer.
+
+### 3. How online vacancy data is measured
+
+Total adverts, adverts split by industry, and adverts split by state or territory are presented as index series. This is calculated using a similar methodology to the [ONS](https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/methodologies/usingadzunadatatoderiveanindicatorofweeklyvacanciesexperimentalstatistics#how-we-measure-online-vacancy-data):
+
+1. calculate the mean of live job adverts listed on Adzuna in July 2021
+2. divide each value in the total time series by this mean value, thus indexing the series so the July 2021 average equals 100
+3. round the indexed values to one decimal place
+
+### 4. Work from home opportunities
+
+The total number of work from home and remote jobs are also collected and converted into an index using the methodology above. Currently, it is unclear what the difference is between the [work from home](https://www.adzuna.com.au/work-from-home) and [remote](https://www.adzuna.com.au/search?remote_only=1) web pages, and the degree of overlap in terms of job categorisation.
